@@ -42,16 +42,6 @@ postgresql_user 'user1' do
 end
 ```
 
-Create a user `user1` with a password, with `createdb` role and set an expiration date to 2018, Dec 21.
-
-```ruby
-postgresql_user 'user1' do
-  password 'UserP4ssword'
-  createdb true
-  valid_until '2018-12-31'
-end
-```
-
 ## Usage
 
 To install and configure your PostgreSQL instance you need to create your own cookbook and call needed resources with your own parameters.
